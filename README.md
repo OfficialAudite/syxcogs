@@ -12,6 +12,16 @@ RED Bot - COGS to make things more fun!
 
 If someting doesn't work don't blame me. I'm kinda new to this thing, but you can allways report it here on github and I will take a look at it when I can!
 
+## Installation
+```
+[p]cog repo add Syxcogs https://github.com/javascripto/syxcogs
+[p]cog install Syxcogs [cog]
+```
+Example:
+```
+[p]cog install Syxcogs hug
+```
+
 ## List of stuff that exists on syxcogs
 
 ### Actions:
