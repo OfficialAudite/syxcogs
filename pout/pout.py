@@ -8,7 +8,7 @@ class Pout:
 
     def __init__(self, bot):
         self.bot = bot
-        self.pout_images = fileIO("data/syxactions/pout.json","load")
+        self.pout_images = fileIO("data/pout/syxactions/pout.json","load")
 
     @commands.command(pass_context=True)
     async def pout(self, ctx, user: discord.Member=None):

@@ -8,7 +8,7 @@ class Bite:
 
     def __init__(self, bot):
         self.bot = bot
-        self.bite_images = fileIO("data/syxactions/bite.json","load")
+        self.bite_images = fileIO("data/bite/syxactions/bite.json","load")
 
     @commands.command(pass_context=True)
     async def bite(self, ctx, user: discord.Member=None):

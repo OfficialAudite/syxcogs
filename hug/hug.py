@@ -8,7 +8,7 @@ class Hug:
 
     def __init__(self, bot):
         self.bot = bot
-        self.hug_images = fileIO("data/syxactions/hug.json","load")
+        self.hug_images = fileIO("data/hug/syxactions/hug.json","load")
 
     @commands.command(pass_context=True)
     async def hug(self, ctx, user: discord.Member=None):

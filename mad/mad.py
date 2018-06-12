@@ -8,7 +8,7 @@ class Mad:
 
     def __init__(self, bot):
         self.bot = bot
-        self.mad_images = fileIO("data/syxactions/mad.json","load")
+        self.mad_images = fileIO("data/mad/syxactions/mad.json","load")
 
     @commands.command(pass_context=True)
     async def mad(self, ctx, user: discord.Member=None):
