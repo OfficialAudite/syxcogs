@@ -8,7 +8,7 @@
 
 RED Bot - COGS to make things more fun!
 
-# Actions
+## Actions
 All the actions that exists:
 ```
 hug
