@@ -1,3 +1,5 @@
+![intro](https://i.imgur.com/XaySTgx.png)
+
 [![PyPI](https://img.shields.io/badge/Python-3.5-blue.svg?style=flat-square)](https://www.python.org/downloads/) 
 [![Red Bot](https://img.shields.io/badge/Discord-Red%20Bot-red.svg?style=flat-square)](https://github.com/Twentysix26/Red-DiscordBot)
 [![Discord](https://img.shields.io/discord/102860784329052160.svg?style=flat-square)](https://discord.gg/hevuDeP)
