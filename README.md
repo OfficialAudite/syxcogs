@@ -32,9 +32,10 @@ ect
 5. Submit a pull request :D
 ## History
 2018-06-12
-- Added Bite
-- Added Pout
-- Added Punch
+- [x] Added Bite
+- [x] Added Pout
+- [x] Added Punch
+- [x] Added Slap
 ## Credits
 * [Syx](https://github.com/javascripto) (*Main developer of cogs*.)
 ## License
