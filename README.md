@@ -22,6 +22,7 @@ Example:
 [p]hug
 [p]bite
 [p]mad
+[p]punch
 ect
 ```
 ## Contributing
