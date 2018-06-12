@@ -31,6 +31,6 @@ ect
 ## History
 Added bite 2018-06-12
 ## Credits
-TODO: Write credits
+* [Syx](https://github.com/javascripto)
 ## License
 MIT License
