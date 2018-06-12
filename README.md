@@ -4,17 +4,9 @@
 [![Paypal donate](https://img.shields.io/badge/PayPal-Donate-red.svg?longCache=true&style=flat-square)](https://paypal.me/dofkis)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/javascripto/syxcogs/blob/master/LICENSE)
 
-## SyxCogs
-
+# SyxCogs
 RED Bot - COGS to make things more fun!
-
-# Get started with
-
-### Information
-
-If someting doesn't work don't blame me. I'm kinda new to this thing, but you can allways report it here on github and I will take a look at it when I can!
-
-### Installation
+## Installation
 ```
 [p]cog repo add Syxcogs https://github.com/javascripto/syxcogs
 [p]cog install Syxcogs [cog]
@@ -23,32 +15,13 @@ Example:
 ```
 [p]cog install Syxcogs hug
 ```
-
-## List of stuff that exists on syxcogs
-
-#### Actions:
-- hug
-- bite
-- mad
-
-
-
-
-
-
-
-
-
-
-
-
-
-# ${1:Project Name}
-TODO: Write a project description
-## Installation
-TODO: Describe the installation process
 ## Usage
-TODO: Write usage instructions
+```
+[p]hug
+[p]bite
+[p]mad
+ect
+```
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -56,8 +29,8 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-TODO: Write history
+Added bite 2018-06-12
 ## Credits
 TODO: Write credits
 ## License
-TODO: Write license
+MIT License
