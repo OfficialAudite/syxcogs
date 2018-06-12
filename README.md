@@ -4,11 +4,11 @@
 [![Paypal donate](https://img.shields.io/badge/PayPal-Donate-red.svg?longCache=true&style=flat-square)](https://paypal.me/dofkis)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/javascripto/syxcogs/blob/master/LICENSE)
 
-# SyxCogs
+## SyxCogs
 
 RED Bot - COGS to make things more fun!
 
-## Get started with
+# Get started with
 
 ### Information
 
