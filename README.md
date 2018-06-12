@@ -33,4 +33,4 @@ Added bite 2018-06-12
 ## Credits
 * [Syx](https://github.com/javascripto) (*Main developer of cogs*.)
 ## License
-MIT License
+[MIT License](https://github.com/javascripto/syxcogs/blob/master/LICENSE)
