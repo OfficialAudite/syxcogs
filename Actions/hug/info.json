@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Syx",
+    "INSTALL_MSG" : "Start to hug everyone! Make chat more alive!",
+    "NAME" : "Hug",
+    "SHORT" : "Hug actions",
+    "DESCRIPTION" : "Hug people on servers!",
+    "TAGS" : ["hug", "actions", "huggif"]
+}
