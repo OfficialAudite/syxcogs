@@ -15,8 +15,7 @@ If someting doesn't work don't blame me. I'm kinda new to this thing, but you ca
 ## List of stuff that exists on syxcogs:
 
 #### Actions
-```
-hug
-bite
-mad
-```
+- hug
+- bite
+- mad
+
