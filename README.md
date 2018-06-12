@@ -31,7 +31,10 @@ ect
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-Added bite 2018-06-12
+2018-06-12
+- Added Bite
+- Added Pout
+- Added Punch
 ## Credits
 * [Syx](https://github.com/javascripto) (*Main developer of cogs*.)
 ## License
