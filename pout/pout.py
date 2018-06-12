@@ -14,10 +14,19 @@ class Pout:
     async def pout(self, ctx, user: discord.Member=None):
         """It's a action if you want to pout. Tag a person too!"""
 
-        author = ctx.message.author
-        try:
+        #author = ctx.message.author
+        
+        author = str(ctx.message.author)
+        author_name, author_code = author.split("#")
+		
+        target = "someone.."
+        if user != None:
+            user = str(user)
+            user_name, user_code = user.split("#")
+            target = user_name
 
-                b = discord.Embed(color = discord.Color(0xA4DAC4)))
+        try:
+                b = discord.Embed(color = discord.Color(0xA4DAC4), title = (author_name + " pouts at " + target))
                 b.set_image(url=rnd(self.pout_images))
                 await self.bot.say(embed=b)
 
