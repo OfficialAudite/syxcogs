@@ -7,3 +7,11 @@
 # SyxCogs
 
 RED Bot - COGS to make things more fun!
+
+# Actions
+All the actions that exists:
+```
+hug
+bite
+mad
+```
