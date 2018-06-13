@@ -1,5 +1,6 @@
 import discord
 import random
+import datetime
 from discord.ext import commands
 from discord.ext.commands import errors, converter
 from .utils.dataIO import fileIO
@@ -16,19 +17,20 @@ class Ship:
     async def ship(self, ctx, user: discord.Member):
         """not sure but it's probably random. Tag a person!"""
 
-        #author = ctx.message.author
-        
-        author = str(ctx.message.author)
-        author_name, author_code = author.split("#")
-		
-        target = "himself, creepy ugghhh!!!!!"
-        if user != None:
-            user = str(user)
-            user_name, user_code = user.split("#")
-            target = user_name
-   
-        random.seed(1)
-        rate =  random.randint(1, 99)
+        author = ctx.message.author                         #Here we get the Author Object
+        author_id = float(author.id)                              #Here we Get his ID
+        author_name, author_code = str(author).split("#")   #We split his name as a string
+
+        #Removed the if and the base atrget because you need a user to ship with!!
+        user_id = float(user.id)                                   #Here get the user ID
+        user_name, user_code = str(user).split("#")         #Cast user to a str and split at the same time
+        target = user_name                                  #Set the target Name
+
+        now = datetime.datetime.now()                       #Create datetime Object
+        day_seed = (now.day + now.month + now.year) / 3     #Generate the date seed by doing the average of the current day month and year
+        seed = (author_id + user_id) / day_seed         #Generate the Ship seed by dadding both author and user IDs and dividing it by time seed
+        random.seed(seed)                                   #Apply the seed to the generator
+        rate =  random.randint(1, 99)                       #Generate the Ship %
 
         mess = "love rate between " + author_name + " and " + target + " is " + str(rate) + "%"
 
