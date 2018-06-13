@@ -11,14 +11,25 @@
 RED Bot - COGS to make things more fun!
 ## Things needed
 Before you start the bot or download it you will need these things separately:
+- RED Bot
+- FFmpeg
 - Pillow
 - Python (in some cases)
+- GIT
 ```
+[Python]
 sudo apt-get install python3.6
 sudo apt-get update
 
+[Pillow]
 sudo apt install python3-pil (ubuntu)
 pip3 install Pillow (all other)
+
+[FFmpeg]
+git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+
+[GIT] (if needed)
+sudo apt-get install git
 ```
 ## Installation
 [![RED BOT DOWNLOAD](https://img.shields.io/badge/Download-RED%20BOT-red.svg?style=flat-square)](https://github.com/Twentysix26/Red-DiscordBot)  
