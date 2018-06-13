@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Syx",
+    "INSTALL_MSG" : "See if you ship that person!",
+    "NAME" : "Ship",
+    "SHORT" : "Ship action",
+    "DESCRIPTION" : "See if you ship with people on servers!",
+    "TAGS" : ["ship", "actions"]
+}
