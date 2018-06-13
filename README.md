@@ -10,7 +10,7 @@
 # SyxCogs
 RED Bot - COGS to make things more fun!
 ## Installation
-[![RED BOT DOWNLOAD](https://img.shields.io/badge/Download-RED%20BOT-red.svg?style=flat-square)](https://github.com/Twentysix26/Red-DiscordBot)
+[![RED BOT DOWNLOAD](https://img.shields.io/badge/Download-RED%20BOT-red.svg?style=flat-square)](https://github.com/Twentysix26/Red-DiscordBot) \n
 First you will need to write this command in chat when [RED BOT](https://github.com/Twentysix26/Red-DiscordBot) is started. [p] stands for prefix.
 ```
 [p]cog repo add Syxcogs https://github.com/javascripto/syxcogs
