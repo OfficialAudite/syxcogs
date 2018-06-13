@@ -13,7 +13,7 @@ RED Bot - COGS to make things more fun!
 Before you proceed to the bot installation you will need these things separately:
 - RED Bot
 - FFmpeg
-- Pillow
+- Pillow (None of the cogs require it for now.)
 - Python (in some cases)
 - GIT
 ```
