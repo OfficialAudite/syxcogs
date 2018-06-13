@@ -32,7 +32,7 @@ class Ship:
         random.seed(seed)                                   #Apply the seed to the generator
         rate =  random.randint(1, 99)                       #Generate the Ship %
 
-        mess = "love rate between " + author_name + " and " + target + " is " + str(rate) + "%"
+        mess = "Love rate between " + author_name + " and " + target + " is " + str(rate) + "%"
 
         try:
                 b = discord.Embed(color = discord.Color(0xeb1818), title = (str(mess)))
