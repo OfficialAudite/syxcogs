@@ -49,7 +49,7 @@ ect
 - [x] Added Punch
 - [x] Added Slap
 ## Credits
-* [Syx](https://github.com/javascripto) (*Developer of cogs*)
-* [Martinho23](https://github.com/martinho23) (*Developer of cogs*)
+* [Syx](https://github.com/javascripto) (*Main developer of Syxcogs*)
+* [Martinho23](https://github.com/martinho23) (*Developer of Syxcogs*)
 ## License
 [MIT License](https://github.com/javascripto/syxcogs/blob/master/LICENSE)
