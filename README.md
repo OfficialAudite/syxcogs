@@ -32,10 +32,11 @@ ect
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-   2018-06-13
+
+2018-06-13
 - [x] Added Ship
 
-   2018-06-12
+2018-06-12
 - [x] Added Bite
 - [x] Added Pout
 - [x] Added Punch
