@@ -10,7 +10,7 @@
 # SyxCogs
 RED Bot - COGS to make things more fun!
 ## Things needed
-Before you start the bot or download it you will need these things separately:
+Before you proceed to the bot installation you will need these things separately:
 - RED Bot
 - FFmpeg
 - Pillow
