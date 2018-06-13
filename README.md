@@ -10,6 +10,15 @@
 # SyxCogs
 RED Bot - COGS to make things more fun!
 ## Installation
+Before you start the bot or download it you will need these things separately:
+- PILL
+```
+sudo apt-get install python3.6
+sudo apt-get update
+
+sudo apt install python3-pil (ubuntu)
+pip3 install Pillow (all other)
+```
 [![RED BOT DOWNLOAD](https://img.shields.io/badge/Download-RED%20BOT-red.svg?style=flat-square)](https://github.com/Twentysix26/Red-DiscordBot)  
 First you will need to write this command in chat when [RED BOT](https://github.com/Twentysix26/Red-DiscordBot) is started. [p] stands for prefix.
 ```
