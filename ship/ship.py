@@ -26,15 +26,11 @@ class Ship:
             user = str(user)
             user_name, user_code = user.split("#")
             target = user_name
-
-        
-    
+   
+        random.seed(1)
         rate =  random.randint(1, 99)
 
-
         mess = "love rate between " + author_name + " and " + target + " is " + str(rate) + "%"
-
-
 
         try:
                 b = discord.Embed(color = discord.Color(0xeb1818), title = (str(mess)))
