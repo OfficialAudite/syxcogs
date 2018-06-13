@@ -39,5 +39,6 @@ ect
 - [x] Added Slap
 ## Credits
 * [Syx](https://github.com/javascripto) (*Main developer of cogs*.)
+* [Martinho23] (https://github.com/martinho23) (*Problem solver for cogs aka big help.*)
 ## License
 [MIT License](https://github.com/javascripto/syxcogs/blob/master/LICENSE)
