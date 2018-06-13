@@ -10,13 +10,19 @@
 # SyxCogs
 RED Bot - COGS to make things more fun!
 ## Installation
+First you will need to write this command in chat when RED BOT is started. [p] stands for prefix.
 ```
 [p]cog repo add Syxcogs https://github.com/javascripto/syxcogs
+```
+After that there is a chance that you will need to write "I agree" so it adds to repos.
+Since repo now is installed you can go ahead and install different cogs with command bellow.
+```
 [p]cog install Syxcogs [cog]
 ```
-Example:
+
+Example of cog installation:
 ```
-[p]cog install Syxcogs hug
+*cog install Syxcogs hug
 ```
 ## Usage
 ```
