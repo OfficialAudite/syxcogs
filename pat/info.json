@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Syx",
+    "INSTALL_MSG" : "Start to pat everyone! Make chat more alive!",
+    "NAME" : "Pat",
+    "SHORT" : "Pat actions",
+    "DESCRIPTION" : "Pat people on servers!",
+    "TAGS" : ["pat", "actions", "patgif"]
+}
