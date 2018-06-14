@@ -12,13 +12,13 @@ class Mad:
     async def mad(self, context, member: discord.Member=None):
         """Be mad at your senpai/waifu or even yourself!"""
         author = context.message.author.mention
-        text = ("at someone...")
+        text = ("someone...")
         
         if member != None:
             mention = member.mention
             text = mention
 
-        mad = "**{0} is mad {1}!**"
+        mad = "**{0} is mad at {1}!**"
 
         choices = fileIO("data/mad/syxactions/mad.json","load")		
                 
