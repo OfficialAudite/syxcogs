@@ -18,8 +18,8 @@ class Kiss:
             mention = member.mention
             text = mention
 			kiss = "**{0} {1}!**"
-        else
-            kiss = "**{0} kisses {1}!**"
+
+        kiss = "**{0} kisses {1}!**"
 
         choices = fileIO("data/kiss/syxactions/kiss.json","load")		
                 
