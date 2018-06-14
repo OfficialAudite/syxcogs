@@ -1,35 +1,34 @@
-import discord
 from discord.ext import commands
 from discord.ext.commands import errors, converter
 from .utils.dataIO import fileIO
-from random import choice as rnd
+import random
+import discord
 
 class Mad:
-
     def __init__(self, bot):
         self.bot = bot
-        self.mad_images = fileIO("data/mad/syxactions/mad.json","load")
 
     @commands.command(pass_context=True)
-    async def mad(self, ctx, user: discord.Member=None):
-        """It's a action if you are mad. Tag a person too!"""
+    async def mad(self, context, member: discord.Member=None):
+        """Be mad at your senpai/waifu or even yourself!"""
+        author = context.message.author.mention
+        text = ("at someone...")
+        
+        if member != None:
+            mention = member.mention
+            text = mention
 
-        author = str(ctx.message.author)
-        author_name, author_code = author.split("#")
-        target = "you!!!!!"
-		
-        if user != None:
-            user = str(user)
-            user_name, user_code = user.split("#")
-            target = user_name
-        try:
+        mad = "**{0} is mad {1}!**"
 
-                b = discord.Embed(color = discord.Color(0xA4DAC4), title = (author_name + " is very mad at " + target))
-                b.set_image(url=rnd(self.mad_images))
-                await self.bot.say(embed=b)
+        choices = fileIO("data/mad/syxactions/mad.json","load")		
+                
+        image = random.choice(choices)
+        
+        embed = discord.Embed(description=mad.format(author, text), colour=discord.Colour.blue())
+        embed.set_image(url=image)
 
-        except errors.BadArgument:
-                await self.bot.say("Oops, a mad picture couldn't be sent! Try again later")
+        await self.bot.say(embed=embed)
 
 def setup(bot):
-    bot.add_cog(Mad(bot))
+    n = Mad(bot)
+    bot.add_cog(n)
