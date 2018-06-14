@@ -12,13 +12,14 @@ class Kiss:
     async def kiss(self, context, member: discord.Member=None):
         """Kiss your senpai/waifu or even the enemy!"""
         author = context.message.author.mention
-        text = ("a secret ghost!!")
+        text = ("why do you try to Kiss a Ghost :3")
         
         if member != None:
             mention = member.mention
             text = mention
-
-        kiss = "**{0} kisses {1}!**"
+			kiss = "**{0} {1}!**"
+        else
+            kiss = "**{0} kisses {1}!**"
 
         choices = fileIO("data/kiss/syxactions/kiss.json","load")		
                 
