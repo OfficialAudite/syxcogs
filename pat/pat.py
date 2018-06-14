@@ -12,13 +12,13 @@ class Pat:
     async def pat(self, context, member: discord.Member=None):
         """Pat your senpai/waifu or even the enemy!"""
         author = context.message.author.mention
-        text = ("a ghost!!")
+        text = ("someone who is worth it!")
         
         if member != None:
             mention = member.mention
             text = mention
 
-        pat = "**{0} kisses {1}!**"
+        pat = "**{0} pats {1}!**"
 
         choices = fileIO("data/pat/syxactions/pat.json","load")		
                 
