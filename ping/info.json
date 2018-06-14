@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Syx",
+    "INSTALL_MSG" : "Ping and get the time that took.",
+    "NAME" : "Ping",
+    "SHORT" : "Ping > Pong ",
+    "DESCRIPTION" : "You need to remove ping command from general to get this to work. CTRL+F search ping and remove it.",
+    "TAGS" : ["ping", "pingtime"]
+}
