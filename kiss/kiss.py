@@ -12,7 +12,7 @@ class Kiss:
     async def kiss(self, context, member: discord.Member=None):
         """Kiss your senpai/waifu or even the enemy!"""
         author = context.message.author.mention
-        text = ("a ghost!!")
+        text = ("a secret ghost!!")
         
         if member != None:
             mention = member.mention
