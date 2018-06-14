@@ -1,6 +1,6 @@
 {
     "AUTHOR" : "Syx",
-    "INSTALL_MSG" : "Ping and get the time that took.",
+    "INSTALL_MSG" : "Ping and get the time that took. You need to replace your general.py with this one to work: https://github.com/javascripto/syxcogs/tree/master/update%20general ",
     "NAME" : "Ping",
     "SHORT" : "Ping > Pong ",
     "DESCRIPTION" : "You need to remove ping command from general to get this to work. CTRL+F search ping and remove it.",
