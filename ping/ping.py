@@ -3,7 +3,8 @@ from discord.ext import commands
 from .utils.dataIO import fileIO
 import datetime
 import time
-from random import choice, randint, random
+import random
+from random import choice, randint
 
 class ping:
     """Ping, with time"""
