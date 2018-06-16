@@ -4,7 +4,6 @@ from .utils.dataIO import fileIO
 import datetime
 import time
 import random
-from random import choice, randint
 
 class ping:
     """Ping, with time"""
@@ -21,7 +20,7 @@ class ping:
         await self.bot.send_typing(ctx.message.channel)
         t2 = time.perf_counter()
         thedata = ("Time: " + str(round((t2-t1)*1000)) + " ms")
-        color = ''.join([choice('0123456789ABCDEF') for x in range(6)])
+        color = ''.join([random.choice('0123456789ABCDEF') for x in range(6)])
         color = int(color, 16)
         data = discord.Embed(title=("Pong"), description=thedata, colour=discord.Colour(value=color))
         data.set_image(url="image")
