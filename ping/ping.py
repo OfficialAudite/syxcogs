@@ -23,7 +23,7 @@ class ping:
         color = ''.join([random.choice('0123456789ABCDEF') for x in range(6)])
         color = int(color, 16)
         data = discord.Embed(title=("Pong"), description=thedata, colour=discord.Colour(value=color))
-        data.set_image(url="image")
+        data.set_image(url=image)
         
         await self.bot.say(embed=data)
      
