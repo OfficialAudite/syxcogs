@@ -12,7 +12,7 @@ class Pat:
     async def pat(self, context, member: discord.Member=None):
         """Pat your senpai/waifu or even the enemy!"""
         author = context.message.author.mention
-        text = ("someone who is really worth it!")
+        text = ("someone who is really worth it!!")
         
         if member != None:
             mention = member.mention
