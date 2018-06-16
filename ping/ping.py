@@ -16,10 +16,11 @@ class ping:
         t1 = time.perf_counter()
         await self.bot.send_typing(ctx.message.channel)
         t2 = time.perf_counter()
-        thedata = ("**Pong.**\nTime: " + str(round((t2-t1)*1000)) + "ms")
+        thedata = ("Time: " + str(round((t2-t1)*1000)) + " ms")
         color = ''.join([choice('0123456789ABCDEF') for x in range(6)])
         color = int(color, 16)
-        data = discord.Embed(description=thedata, colour=discord.Colour(value=color))
+        data = discord.Embed(title=("Pong"), description=thedata, colour=discord.Colour(value=color))
+        data.set_image(url="http://touch.prodigy.co.id/wp-content/uploads/2015/04/36.gif")
         
         await self.bot.say(embed=data)
      
