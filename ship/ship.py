@@ -5,10 +5,7 @@ import datetime
 import requests
 from discord.ext import commands
 from discord.ext.commands import errors, converter
-from random import choice as rnd
 from PIL import Image, ImageFont, ImageDraw
-if discord.__version__ < "1.0.0":
-    from .utils.dataIO import fileIO
 
 class Ship:
     def __init__(self, bot):
@@ -31,13 +28,11 @@ class Ship:
         random.seed(seed)                                                   #Apply the seed to the generator
         rate =  random.randint(1, 99)                                       #Generate the Ship %
 
-        mess = "Love rate between " + author.mention + " and " + user.mention + " is " + str(rate) + "%"
-
         user_avatar = get_avatar(user)                                      #Get user avatar from discord
         author_avatar = get_avatar(author)                                  #Get author avatar from discord
 
         if ((user_avatar and author_avatar != None)):                       #Test if got the avatars proprely
-            self.make_image(author_avatar, user_avatar, author.name, user.name, str(rate) + "%") #Make the ship image from the avatars
+            self.make_image(author_avatar, user_avatar, author.name, user.name, rate) #Make the ship image from the avatars
             await self.img_ship(ctx, author.mention, user.mention, rate)    #Call image based ship command
         else:
             await self.text_ship(user.mention, author.mention, rate)        #Call text based ship command
@@ -62,20 +57,29 @@ class Ship:
             except errors.BadArgument:
                 await self.bot.say("Oops, something went wrong! try again later!")
     def make_image(self, author_avatar, user_avatar, author, user, rate):
+        #Define colors
+        red = (191, 15, 0, 255)                                             #Tuple that matche the red color
+        white = (255, 255, 255, 255)                                        #Tuple that matche the white color
+        blank = (255, 255, 255, 0)                                          #Tuple that matche the blank color
+
         #Open template
-        tmpl = Image.open("data/ship/Template.png", "r").convert('RGBA')    #Open template image
-        text = Image.new('RGBA', tmpl.size, (255, 255, 255, 0))             #Blank image to write the text
-        fnt = ImageFont.truetype("data/ship/font.ttf", 15)                  #Load font
-        draw = ImageDraw.Draw(text)                                         #Create drawing context
+        tmpl = Image.open("data/ship/Template.png", "r").convert('RGBA')    #Open template Image
+        fill = Image.open("data/ship/Tmpl_fill.png", "r").convert('RGBA')   #Open fill template
+        blank = Image.new('RGBA', tmpl.size, blank)                         #Blank image to write the text and paste fill
+        fnt = ImageFont.truetype("data/ship/font.ttf", 17)                  #Load font
+        draw = ImageDraw.Draw(blank)                                         #Create drawing context
 
         tmpl.paste(author_avatar, (0, -5))                                  #Paste Author avatar on the template
         tmpl.paste(user_avatar, (0, 133))                                   #Paste User avatar on the template
-        draw.text((140, 18), str(author), font=fnt, fill=(191, 15, 0, 255)) #Write author Name
-        draw.text((140, 220), str(user), font=fnt, fill=(191, 15, 0, 255))  #Write user Name
+        offset = 100 - rate                                                 #calculate offset from rate
+        fill = fill.crop((0, offset, 116, 100))                             #Crop fill image to the good size
+        blank.paste(fill, (139, 70 + offset))                               #Paste fill image into the blank
+        draw.text((140, 15), str(author), font=fnt, fill=red)               #Write author Name
+        draw.text((140, 225), str(user), font=fnt, fill=red)                #Write user Name
         fnt = ImageFont.truetype("data/ship/font.ttf", 40)                  #Resize font
-        draw.text((165, 96), str(rate), font=fnt, fill=(255, 255, 255, 255))#Write rate %
+        draw.text((165, 96), str(rate) + "%", font=fnt, fill=white)         #Write rate %
 
-        tmpl = Image.alpha_composite(tmpl, text)                            #Merge template with text
+        tmpl = Image.alpha_composite(tmpl, blank)                           #Merge template with blank
         tmpl.save("data/ship/tmp_ship.png", "PNG")                          #Save template to tmp file
 
 
