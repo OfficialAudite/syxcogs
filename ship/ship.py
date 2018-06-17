@@ -72,8 +72,8 @@ class Ship:
         tmpl.paste(author_avatar, (0, -10))                                 #Paste Author avatar on the template
         tmpl.paste(user_avatar, (0, 266))                                   #Paste User avatar on the template
         offset = (100 - rate) * 2                                           #calculate offset from rate
-        fill = fill.crop((0, offset, 232, 200))                             #Crop fill image to the good size
-        blank.paste(fill, (278, 140 + offset))                              #Paste fill image into the blank
+        fill = fill.crop((0, offset, fill.width, fill.height))              #Crop fill image to the good size
+        blank.paste(fill, (tmpl.width - fill.width - 1, 154 + offset))      #Paste fill image into the blank
         draw.text((280, 25), str(author), font=fnt, fill=red)               #Write author Name
         draw.text((280, 450), str(user), font=fnt, fill=red)                #Write user Name
         fnt = ImageFont.truetype("data/ship/font.ttf", 80)                  #Resize font
