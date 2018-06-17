@@ -66,18 +66,18 @@ class Ship:
         tmpl = Image.open("data/ship/Template.png", "r").convert('RGBA')    #Open template Image
         fill = Image.open("data/ship/Tmpl_fill.png", "r").convert('RGBA')   #Open fill template
         blank = Image.new('RGBA', tmpl.size, blank)                         #Blank image to write the text and paste fill
-        fnt = ImageFont.truetype("data/ship/font.ttf", 17)                  #Load font
-        draw = ImageDraw.Draw(blank)                                         #Create drawing context
+        fnt = ImageFont.truetype("data/ship/font.ttf", 34)                  #Load font
+        draw = ImageDraw.Draw(blank)                                        #Create drawing context
 
-        tmpl.paste(author_avatar, (0, -5))                                  #Paste Author avatar on the template
-        tmpl.paste(user_avatar, (0, 133))                                   #Paste User avatar on the template
-        offset = 100 - rate                                                 #calculate offset from rate
-        fill = fill.crop((0, offset, 116, 100))                             #Crop fill image to the good size
-        blank.paste(fill, (139, 70 + offset))                               #Paste fill image into the blank
-        draw.text((140, 15), str(author), font=fnt, fill=red)               #Write author Name
-        draw.text((140, 225), str(user), font=fnt, fill=red)                #Write user Name
-        fnt = ImageFont.truetype("data/ship/font.ttf", 40)                  #Resize font
-        draw.text((165, 96), str(rate) + "%", font=fnt, fill=white)         #Write rate %
+        tmpl.paste(author_avatar, (0, -10))                                 #Paste Author avatar on the template
+        tmpl.paste(user_avatar, (0, 266))                                   #Paste User avatar on the template
+        offset = (100 - rate) * 2                                           #calculate offset from rate
+        fill = fill.crop((0, offset, 232, 200))                             #Crop fill image to the good size
+        blank.paste(fill, (278, 140 + offset))                              #Paste fill image into the blank
+        draw.text((280, 25), str(author), font=fnt, fill=red)               #Write author Name
+        draw.text((280, 450), str(user), font=fnt, fill=red)                #Write user Name
+        fnt = ImageFont.truetype("data/ship/font.ttf", 80)                  #Resize font
+        draw.text((330, 192), str(rate) + "%", font=fnt, fill=white)        #Write rate %
 
         tmpl = Image.alpha_composite(tmpl, blank)                           #Merge template with blank
         tmpl.save("data/ship/tmp_ship.png", "PNG")                          #Save template to tmp file
@@ -96,7 +96,7 @@ class Ship:
 def get_avatar(user):
     try:
         user_url, pic_size = str(user.avatar_url).split("?")                #Split to remove the image size
-        response = requests.get(user_url + "?size=128", "r")                #URL request with Image at 128
+        response = requests.get(user_url + "?size=256", "r")                #URL request with Image at 128
         avatar = Image.open(io.BytesIO(response.content)).convert('RGBA')   #Open image in PLI
         tmp = Image.new('RGBA', avatar.size, (255, 255, 255, 255))          #Create white back ground
         tmp = Image.alpha_composite(tmp, avatar)                            #Merge avatar with a white background
