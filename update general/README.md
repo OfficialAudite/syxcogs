@@ -12,7 +12,7 @@ RED Bot - COGS to make things more fun!
 ## Why to upload this general instead of your?
 It removes hug & ping commands so that syxcogs hug and ping can work.
 Hug is with gifs so that makes more feeling to the chat.
-Ping is upgraded and had time function that tells how much time the request took.
+Ping is upgraded and has time function that tells how much time the request took.
 ## Credits
 * [Syx](https://github.com/javascripto) (*Main developer of Syxcogs*)
 * [Martinho23](https://github.com/martinho23) (*Developer of Syxcogs*)
